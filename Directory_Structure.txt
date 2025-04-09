@@ -1,0 +1,17 @@
+face-attendance-system/
+│
+├── attendance_system/
+│   ├── employees/          # Directory for employee images
+│   ├── embedding_labels/   # Directory for storing face embeddings
+│   ├── logs/               # Directory for storing attendance logs
+│   ├── models/              # Directory for storing face detection and recognition models
+│   ├── sessions/            # Directory for storing session data
+│   │   ├── {session_id}/    # Subdirectory for each session
+│   │   │   ├── frames/       # Directory for storing captured frames
+│   │   │   ├── visualizations/ # Directory for storing visualizations
+│   ├── visitors/            # Directory for storing visitor images
+│
+├── main.py                 # Main script to run the system
+├── README.md               # Project documentation
+├── LICENSE                 # Project license
+└── requirements.txt        # Project dependencies
