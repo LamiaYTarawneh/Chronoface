@@ -1,0 +1,16 @@
+Session Summary: 20250411_080324
+Date: 2025-04-11
+Time: 08:04:06
+
+Attendance Overview:
+Total unique individuals: 2
+Employees present: 0
+Visitors: 2
+
+Employee Details:
+
+Visitor Details:
+- VISITOR_1 (ID 1): Detected 2 times, Avg Similarity: 0.7790
+  First seen: 2025-04-11 08:03:38, Last seen: 2025-04-11 08:03:40
+- VISITOR_2 (ID 2): Detected 1 times, Avg Similarity: 0.6744
+  First seen: 2025-04-11 08:03:49, Last seen: 2025-04-11 08:03:49

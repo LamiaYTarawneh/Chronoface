@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ChronoFace - Live Attendance System</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      width: 100%;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .container {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .video-box {
+      border: 4px solid #3498db;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    img.feed {
+      width: 640px;
+      height: 480px;
+      display: block;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      background-color: #3498db;
+      color: white;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: #2980b9;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="ChronoFace Logo">
+    <h1>ChronoFace - Live Attendance System</h1>
+  </header>
+
+  <div class="container">
+    <div class="video-box">
+      <img src="{{ url_for('video_feed') }}" alt="Live Video Feed" class="feed">
+    </div>
+
+    <div class="buttons">
+      <a href="{{ url_for('attendance') }}">View Attendance Log</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; {{ 2025 }} ChronoFace System | Developed with OpenCV & Flask
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+Session Summary: 20250410_093059
+Date: 2025-04-10
+Time: 09:31:52
+
+Attendance Overview:
+Total unique individuals: 1
+Employees present: 0
+Visitors: 1
+
+Employee Details:
+
+Visitor Details:
+- VISITOR_2 (ID 2): Detected 2 times, Avg Similarity: 0.7827
+  First seen: 2025-04-10 09:31:37, Last seen: 2025-04-10 09:31:39

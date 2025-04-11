@@ -1,0 +1,41 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Attendance System - Session 20250410_092016</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    h1, h2 { color: #2c3e50; }
+                    .dashboard { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+                    .chart { border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #f9f9f9; }
+                    .chart img { max-width: 100%; height: auto; }
+                    .summary { margin-bottom: 20px; }
+                </style>
+            </head>
+            <body>
+                <h1>Face Attendance System - Session Report</h1>
+                <div class="summary">
+                    <h2>Session Summary</h2>
+                    <p><strong>Session ID:</strong> 20250410_092016</p>
+                </div>
+                <div class="dashboard">
+                    <div class="chart">
+                        <h2>Detection Events Over Time</h2>
+                        <img src="detections_over_time.png" alt="Detection Events Over Time">
+                    </div>
+                    <div class="chart">
+                        <h2>Person Type Distribution</h2>
+                        <img src="person_type_distribution.png" alt="Person Type Distribution">
+                    </div>
+                    <div class="chart">
+                        <h2>Top Detected Individuals</h2>
+                        <img src="top_detected_individuals.png" alt="Top Detected Individuals">
+                    </div>
+                    <div class="chart">
+                        <h2>Action Types Distribution</h2>
+                        <img src="action_types_distribution.png" alt="Action Types Distribution">
+                    </div>
+                </div>
+            </body>
+            </html>
+            
