@@ -1,3 +1,6 @@
+# Issues: unable to idenfity faces; unable to extract local embeddings 
+
+
 # Import Packages
 import cv2
 import os
