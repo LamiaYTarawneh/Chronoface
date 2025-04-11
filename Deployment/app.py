@@ -1,6 +1,3 @@
-# Issues: unable to idenfity faces; unable to extract local embeddings 
-
-
 # Import Packages
 import cv2
 import os
@@ -894,13 +891,31 @@ def generate_frames():
 
         frame = cv2.flip(frame, 1)
         face_locations = system._detect_faces(frame)
+
+        recognized_info = []
+        current_time = time.time()
+        processed_positions = set()
+
+        for face_location in face_locations:
+            x1, y1, x2, y2 = face_location
+            center_x, center_y = (x1+x2)//2, (y1+y2)//2
+            face_pos_id = f"{center_x//20}_{center_y//20}"
+
+            if face_pos_id in processed_positions:
+                continue
+            processed_positions.add(face_pos_id)
+
+            if system.auto_capture:
+                result = system.process_new_face(frame, face_location)
+                if result:
+                    person_id, name, bbox, similarity = result
+                    recognized_info.append((person_id, name, bbox, similarity))
+
+        system.recognized_faces = recognized_info
         annotated_frame = system.draw_info_on_frame(frame, face_locations)
 
-        # Encode frame as JPEG
         ret, buffer = cv2.imencode('.jpg', annotated_frame)
         frame = buffer.tobytes()
-
-        # Yield frame to browser
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
