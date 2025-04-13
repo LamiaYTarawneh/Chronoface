@@ -1,6 +1,6 @@
-# Chronoface
+# ChronoFace
 
-## AI-Powered facial recognition logbook
+## AI-Powered Facial Recognition Logbook
 
 ### Overview
 
