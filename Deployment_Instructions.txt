@@ -4,7 +4,7 @@ How to deploy the model on PyCharm:
 2) Unzip the downloaded zip file into a folder
 3) Launch the folder as a new project on PyCharm
 4) In the PyCharm terminal, make sure the working directory is set to "C:\...\Chronoface"
-5) Launch a virtual environment by running "python -m venv .venv" and then ".venv\Scripts\Activate.ps1" in the terminal. You should get a green (.venv) before indicating the working directory in the terminal
+5) Launch a virtual environment by running ".venv\Scripts\Activate.ps1" in the terminal. You should get a green (.venv) before indicating the working directory in the terminal
 6) Change the working directory to face_attendance_ui by running "cd C:\...\face_attendance_ui" (this must be done AFTER initializing the venv)
 7) In the terminal, run "python app.py", and click on the link you get in the console, and wait a bit for the code to compile and the app to launch
 
